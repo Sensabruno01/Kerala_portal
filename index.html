@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Portal</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+<style>
+    /*CSS RESET*/
+    body {
+        font-family: 'Lato', sans-serif;
+        font-family: bold;
+
+        color: purple;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+
+
+    }
+
+    .left {
+
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 120px;
+    }
+
+    .mid {
+
+        display: block;
+        width: 44%;
+        margin:  auto;
+        /*border:4px solid blue;*/
+      
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 40px;
+        /*border:4px solid royalblue;*/
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 5px 3px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 5px 4px;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .btn:hover {
+        background-color: grey;
+
+    }
+
+    .container {
+        /*  border:4px solid black ;*/
+        margin: 100px 30px;
+        padding: 75px;
+        width: 43%;
+        border-radius: 2px;
+        color: black;
+    }
+
+    .form-group input text {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    .form-group input {
+        padding: 6px;
+        margin: 11px auto;
+        border-radius: 5px;
+    }
+
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: 4px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Ministery Details</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now </button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h3>KINDLY FILL THE DETAILS</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your District">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your City">
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="Male" name="a" value="Male">
+                    <label for="Male">Male</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" id="Female" name="a" value="Female">
+                    <label for="Female">Female</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" id="Other" name="a" value="Other">
+                    <label for="Other">Other</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone number">
+                </div>
+
+
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
